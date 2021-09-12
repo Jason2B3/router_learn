@@ -1,14 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import classes from "./MainHeader.module.css";
+
 export default function MainHeader() {
   return (
-    <ul>
-      <li>
-        <Link to="/welcome">Welcome</Link>
-      </li>
-      <li>
-        <Link to="/products">Products</Link>
-      </li>
-    </ul>
+    <header className={classes.header}>
+      <ul>
+        <li>
+          <NavLink to="/welcome" activeClassName={classes.clicked}>Welcome</NavLink>
+        </li>
+        <li>
+          <NavLink to="/products" activeClassName={classes.clicked}>Products</NavLink>
+        </li>
+      </ul>
+    </header>
   );
 }
