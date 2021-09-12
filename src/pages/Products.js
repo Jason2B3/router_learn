@@ -3,7 +3,7 @@ import React from "react";
 export default function Welcome() {
   return (
     <section>
-      <h1>The Products Page</h1>
+      <h1>The Products.js component rendering now</h1>
       <ul>
         <li>Book</li>
         <li>Carpet</li>

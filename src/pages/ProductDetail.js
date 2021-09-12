@@ -3,7 +3,7 @@ import React from 'react'
 export default function ProductDetail() {
   return (
     <section>
-      <h1>Product Detail</h1>
+      <h1>Product Detail component rendering now</h1>
     </section>
   )
 }
