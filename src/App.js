@@ -13,7 +13,7 @@ function App() {
       <Route path="/products">
         <Products /> {/* Renders this if the path ends in /products*/}
       </Route>
-      <Route path="/product-detail/:someword">
+      <Route path="/product-detail/:productID">
         <ProductDetail />
       </Route>
     </>
