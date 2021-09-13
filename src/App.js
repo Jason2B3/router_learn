@@ -9,19 +9,22 @@ function App() {
       <MainHeader />
 
       <Switch>
-        <Route path="/welcome">     ROUTE 1
+        <Route path="/welcome">
+          {" "}
+          ROUTE 1
           <Welcome />
         </Route>
-        <Route path="/products">    ROUTE 2
+        <Route path="/products" exact>
+          {" "}
+          ROUTE 2
           <Products />
         </Route>
-        <Route path="/products/:productID" exact>     ROUTE 3
+        <Route path="/products/:productID">
+          {" "}
+          ROUTE 3
           <ProductDetail />
         </Route>
       </Switch>
-      
-      
-
     </>
   );
 }
