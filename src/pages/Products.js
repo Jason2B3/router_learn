@@ -1,9 +1,9 @@
 import React from "react";
-
+import styles from "./Products.module.css";
 export default function Welcome() {
   return (
-    <section>
-      <h1>The Products.js component rendering now</h1>
+    <section className={styles.cubano}>
+      <h1>Products.js component</h1>
       <ul>
         <li>Book</li>
         <li>Carpet</li>

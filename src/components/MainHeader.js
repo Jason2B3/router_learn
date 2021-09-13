@@ -5,6 +5,7 @@ import classes from "./MainHeader.module.css";
 export default function MainHeader() {
   return (
     <header className={classes.header}>
+      
       <ul>
         <li>
           <NavLink to="/welcome" activeClassName={classes.clicked}>Welcome</NavLink>

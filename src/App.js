@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import MainHeader from "./components/MainHeader";
@@ -7,15 +7,21 @@ function App() {
   return (
     <>
       <MainHeader />
-      <Route path="/welcome">
-        <Welcome /> {/* Renders this if the path ends in /welcome*/}
-      </Route>
-      <Route path="/products">
-        <Products /> {/* Renders this if the path ends in /products*/}
-      </Route>
-      <Route path="/product-detail/:productID">
-        <ProductDetail />
-      </Route>
+
+      <Switch>
+        <Route path="/welcome">     ROUTE 1
+          <Welcome />
+        </Route>
+        <Route path="/products">    ROUTE 2
+          <Products />
+        </Route>
+        <Route path="/products/:productID" exact>     ROUTE 3
+          <ProductDetail />
+        </Route>
+      </Switch>
+      
+      
+
     </>
   );
 }
